@@ -3,10 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variables</title>
+    <title>JavaScript Variables</title>
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>Variables in JavaScript</h1>
+    <main>
+        <h1>Variables in JavaScript</h1>
+        <p>This page explains the variable examples in <code>script.js</code>.</p>
+        <section>
+            <h2>Variable Types</h2>
+            <p>The script creates variables for text, numbers, and booleans:</p>
+            <ul>
+                <li><code>let firstName = "Rajiv";</code></li>
+                <li><code>let lastName = "Sharma";</code></li>
+                <li><code>let age = 24;</code></li>
+                <li><code>let isDeveloper = true;</code></li>
+            </ul>
+        </section>
+        <section>
+            <h2>String Interpolation and Concatenation</h2>
+            <p>Use template literals or string concatenation to build text:</p>
+            <ul>
+                <li><code>let bioData = `My name is ${firstName} ${lastName}. I am ${age} years old and I am a developer.`;</code></li>
+                <li><code>let bioData2 = "My name is " + firstName + " " + lastName + ". I am " + age + " years old and I am a developer.";</code></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Undefined and Null</h2>
+            <p>JavaScript uses <code>undefined</code> for declared variables without a value, and <code>null</code> for intentionally empty values:</p>
+            <ul>
+                <li><code>let abc = undefined;</code></li>
+                <li><code>let xyz;</code></li>
+                <li><code>let pqr = null;</code></li>
+            </ul>
+            <p>Note: <code>typeof null</code> returns <code>"object"</code> due to a historical JavaScript quirk.</p>
+        </section>
+        <section>
+            <h2>Reassigning Variables</h2>
+            <p>Variables declared with <code>let</code> can be reassigned and can hold different types:</p>
+            <ul>
+                <li><code>firstName = "Rahul";</code></li>
+                <li><code>firstName = 123;</code></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Constants with const</h2>
+            <p><code>const</code> values cannot be reassigned after initialization:</p>
+            <ul>
+                <li><code>const country = "India";</code></li>
+            </ul>
+            <p>Uncommenting <code>country = "USA";</code> would cause a runtime error.</p>
+        </section>
+        <section>
+            <h2>var and Scope</h2>
+            <p>The script shows how <code>var</code> behaves differently from <code>let</code>:</p>
+            <ul>
+                <li><code>var city = "Mumbai";</code> can be reassigned and redeclared.</li>
+                <li><code>var city = true;</code> shows dynamic typing.</li>
+                <li><code>let blockScopedVariable = "I am block scoped";</code> is only available inside the block.</li>
+                <li><code>var functionScopedVariable = "I am function scoped";</code> is still accessible outside the block.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Hoisting</h2>
+            <p><code>var</code> declarations are hoisted, so the variable exists before its declaration but has the value <code>undefined</code>. In contrast, <code>let</code> does not allow access before declaration.</p>
+        </section>
+        <section>
+            <h2>Variable Naming Rules</h2>
+            <p>Valid variable names can include letters, digits, underscores, and dollar signs but cannot start with a digit or use reserved keywords.</p>
+            <ul>
+                <li><code>let _myVariable = "Valid variable name";</code></li>
+                <li><code>let $myVariable = "Valid variable name";</code></li>
+                <li><code>let myVariable1 = "Valid variable name";</code></li>
+            </ul>
+        </section>
+        <section>
+            <h2>See the Output</h2>
+            <p>Open the browser console to review the values and types logged by <code>script.js</code>.</p>
+        </section>
+    </main>
 </body>
 </html>

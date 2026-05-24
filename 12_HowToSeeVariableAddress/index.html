@@ -7,10 +7,11 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>How to See Variable Address in devtools</h1>
-    <p>In inspect go to memory</p>
-    <p>Take a heap snapshot to see the memory addresses of variables.</p>
-    <p>In the snapshot, you can find the variables and their corresponding memory addresses.</p>
-    <p>In system/context eg: "@432532", you can find the memory address of the variables.</p>
+    <h1>How to See Variable Address in DevTools</h1>
+    <p>Open the browser DevTools (e.g. press F12 or right-click &gt; Inspect).</p>
+    <p>Go to the Memory tab and take a Heap Snapshot.</p>
+    <p>After the snapshot finishes, search for the variable name or object in the snapshot view.</p>
+    <p>The DevTools snapshot shows internal object references such as <code>@12345</code>, which represent the engine's memory handles.</p>
+    <p>For example, if you define <code>const name = 'Alice';</code>, a heap snapshot may show an entry like <code>name @12345</code>.</p>
 </body>
 </html>

@@ -3,11 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript Basics</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <main>
+        <h1>JavaScript Basics</h1>
+        <p>This page demonstrates basic JavaScript concepts using the attached <code>script.js</code> file.</p>
+        <section>
+            <h2>Console Output Examples</h2>
+            <ul>
+                <li><strong>Strings and text:</strong> <code>console.log("Hello World")</code></li>
+                <li><strong>Math operations:</strong> addition and type checks like <code>5 + 4</code> and <code>typeof 5</code></li>
+                <li><strong>String-to-number conversion:</strong> <code>parseInt("100dksfnjnsd")</code> returns <code>100</code></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Type Conversion</h2>
+            <p>The script shows several ways to convert values between strings and numbers:</p>
+            <ul>
+                <li><code>"" + 100</code> and <code>100 + ""</code> convert a number to a string.</li>
+                <li><code>+"100"</code> and <code>Number("100")</code> convert a string to a number.</li>
+                <li><code>String(100)</code> converts a number to a string explicitly.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Parsing and NaN</h2>
+            <p>JavaScript can parse numeric values from strings, but order matters:</p>
+            <ul>
+                <li><code>parseInt("100dfjbjds")</code> returns <code>100</code>.</li>
+                <li><code>parseInt("dfjbjds100")</code> returns <code>NaN</code> because the string does not start with digits.</li>
+                <li>The type of <code>NaN</code> is still <code>number</code>.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Boolean Conversion</h2>
+            <p>Booleans can also convert to numbers:</p>
+            <ul>
+                <li><code>+false</code> becomes <code>0</code>.</li>
+                <li><code>+true</code> becomes <code>1</code>.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Try It</h2>
+            <p>Open your browser DevTools console to see the actual output produced by <code>script.js</code>.</p>
+        </section>
+    </main>
 </body>
 </html>
