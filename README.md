@@ -5,34 +5,20 @@ This repository is created to learn and practice JavaScript from **basic to adva
 
 ## 📚 Topics Covered
 
-### 🟢 Basics
-- Introduction to JavaScript
-- How JavaScript Runs
-- Variables
-- Data Types
-- Operators
-- Strings
-- Math Methods
-
-### 🟡 Intermediate Concepts
-- Comparison Operators
-- Logical Operators
-- Conditional Statements
-- Switch Statements
-- Loops
-- Functions
-- Arrays
-- Objects
-
-### 🔵 Advanced Concepts
-- DOM Manipulation
-- Events
-- ES6 Features
-- Async JavaScript
-- Promises
-- Fetch API
-- OOP in JavaScript
-- Modules
+- 00 Basics
+- 01 Variables
+- 02 How Code Runs in JavaScript
+- 03 Dialogue Boxes
+- 04 String
+- 05 Math
+- 06 Falsy and Truthy
+- 07 Comparison Operator
+- 08 Logical Operator
+- 09 IF/Else Statement
+- 10 Switch Statement
+- 11 Ternary Operator
+- 12 How To See Variable Address
+- 13 Objects
 
 ---
 
@@ -50,5 +36,9 @@ JavaScriptTutorial2026/
 ├── 06_FalsyAndTruthy
 ├── 07_ComparisonOperator
 ├── 08_LogicalOperator
-├── 09_IfElseStatement
+├── 09_IFElseStatement
 ├── 10_SwitchStatement
+├── 11_TernaryOperator
+├── 12_HowToSeeVariableAddress
+├── 13_Objects
+```
