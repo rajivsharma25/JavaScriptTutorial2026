@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Statement</title>
+    <script src="script.js"></script>
+  </head>
+  <body style="font-family: cursive; color:white ; background-color: black">
+    <h1>Switch Statement</h1>
+    <p>
+      Switch statement is a control statement that allows you to execute
+      different blocks of code based on the value of a variable or expression.
+      It is often used as an alternative to multiple if-else statements when you
+      have a large number of conditions to check.
+    </p>
+    <p>The syntax of a switch statement is as follows:</p>
+    <pre>
+switch (expression) {
+    case value1:
+        // code to be executed if expression equals value1
+        break;
+    case value2:
+        // code to be executed if expression equals value2
+        break;
+    ...
+    default:
+        // code to be executed if expression doesn't match any case
+}</pre
+    >
+    <p>
+      In this syntax, the switch statement evaluates the expression and compares
+      it to the values specified in the case statements. If a match is found,
+      the corresponding block of code is executed until a break statement is
+      encountered. If no match is found, the code in the default case is
+      executed.
+    </p>
+    <p>Here is an example of a switch statement in JavaScript:</p>
+    <pre>
+let day = 3;
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    default:
+        console.log("Invalid day");
+}</pre
+    >
+    <p>
+      In this example, the variable day is evaluated in the switch statement.
+      Since day is equal to 3, the code block for case 3 is executed, and
+      "Wednesday" is printed to the console.
+    </p>
+  </body>
+</html>

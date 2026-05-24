@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How Code Runs in JavaScript</title>
+    <script src="script.js" defer></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+        background-color: #333;
+        color: #fff;
+      }
+      ol {
+        margin-left: 20px;
+      }
+      a {
+        color: #1e90ff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>How Code Runs in JavaScript</h1>
+    <p>
+      JavaScript code runs in a single-threaded environment, meaning it can
+      execute one piece of code at a time. However, JavaScript uses an event
+      loop to handle asynchronous operations, allowing it to perform
+      non-blocking tasks such as fetching data from an API or handling user
+      interactions.
+    </p>
+    <p>When JavaScript code is executed, it goes through several phases:</p>
+    <ol>
+      <li>
+        <strong>Parsing:</strong> The JavaScript engine reads the code and
+        converts it into an Abstract Syntax Tree (AST).
+      </li>
+      <li>
+        <strong>Compilation:</strong> The AST is compiled into bytecode, which
+        is a lower-level representation of the code that can be executed by the
+        JavaScript engine.
+      </li>
+      <li>
+        <strong>Execution:</strong> The bytecode is executed line by line. If
+        the code encounters asynchronous operations, it will be added to the
+        event loop to be executed later.
+      </li>
+    </ol>
+    <p>
+      Understanding how JavaScript runs can help developers write more efficient
+      and responsive code, especially when dealing with asynchronous operations
+      and performance optimization.
+    </p>
+    <p>
+      For more information on how JavaScript works, you can refer to the
+      <a
+        href="https://developer.mozilla.org/en-US/search?q=How%20JavaScript%20works"
+        target="_blank"
+        >MDN Web Docs</a
+      >.
+    </p>
+  </body>
+</html>

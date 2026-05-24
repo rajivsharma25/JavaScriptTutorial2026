@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truthy and Falsy Values in JavaScript</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Truthy and Falsy Values in JavaScript</h1>
+    <p>In JavaScript, values can be classified as either "truthy" or "falsy". This classification is important when evaluating conditions in control flow statements like <code>if</code>, <code>while</code>, and others.</p>
+    <h2>Falsy Values</h2>
+    <p>The following values are considered falsy in JavaScript:</p>
+    <ul>
+        <li><code>false</code></li>
+        <li><code>0</code> (zero)</li>
+        <li><code>-0</code> (negative zero)</li>
+        <li><code>0n</code> (BigInt zero)</li>
+        <li><code>""</code> (empty string)</li>
+        <li><code>null</code></li>
+        <li><code>undefined</code></li>
+        <li><code>NaN</code></li>
+    </ul>
+    <h2>Truthy Values</h2>
+    <p>Anything that is not falsy is considered truthy:</p>
+    <ul>
+        <li><code>true</code></li>
+        <li><code>1</code> (non-zero number)</li>
+        <li><code>"hello"</code> (non-empty string)</li>
+        <li><code>[]</code> (empty array)</li>
+        <li><code>{}</code> (empty object)</li>
+        <li><code>function() {}</code> (function)</li>
+    </ul>
+</body>
+</html>
